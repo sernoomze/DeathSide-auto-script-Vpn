@@ -2005,7 +2005,18 @@ if [[ -e /usr/local/bin/speedtest ]]; then
 elif [[ ! -e /usr/local/bin/speedtest ]]; then
 	wget -O /usr/local/bin/speedtest "https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/Speedtest"
 	chmod +x /usr/local/bin/speedtest
-	clear
+	echo ""
+echo ""
+echo -e "${RED} =============== OS-32 & 64-bit =================    "
+echo -e "${RED} #        AUTOSCRIPT CREATED BY DEATHSIDE VPN        #    "
+echo -e "${RED} #      -----------About Us------------         #    "
+echo -e "${RED} #    OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18     #    "
+echo -e "${RED} #               { VPN / SSH }                  #    "
+echo -e "${RED} #         BY : DeathSide VPN               #    "
+echo -e "${RED} =============== OS-32 & 64-bit =================    "
+echo -e "${GREEN} ไอพีเซิฟ: $IP "
+echo -e "${NC} "
+echo ""
 	speedtest --share
 fi
 
