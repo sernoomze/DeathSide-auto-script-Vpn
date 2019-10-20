@@ -3514,7 +3514,7 @@ echo ""
 	00) # ==================================================================================================================
 
 cd /usr/local/bin
-wget -q -O menu "https://raw.githubusercontent.com/sernoomze/DeathSide-Scirp/master/Menu"
+wget -q -O menu "https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/Menu"
 chmod +x /usr/local/bin/menu
 menu
 
