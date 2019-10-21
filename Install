@@ -76,7 +76,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| ติดตั้ง OPENVPN ที่ควบคุมการใช้งานผ่าน PRITUNL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| ติดตั้ง SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB PANEL ${GRAY} ✔   ${NC}"
+	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB DEATHSIDE VPN ${GREEN} ✔   ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| ติดตั้ง SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -899,7 +899,7 @@ fi
 	;;
 
 	4) # ==================================================================================================================
-echo ""
+        echo ""
 	read -p "DeathSide_Wab : " -e -i 1 ระบุ V. ที่ต้องการ
 	echo ""
 	echo -e " |${GRAY}1${NC}| DeathSide Wab V.1"
@@ -913,7 +913,7 @@ echo ""
 		2) 
 		DeathSide_Wab=tcp
 		;;
-    3) 
+                 3) 
 		DeathSide_Wab=udp
  	;;
 
