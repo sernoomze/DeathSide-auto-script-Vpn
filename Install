@@ -76,9 +76,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| ติดตั้ง OPENVPN ที่ควบคุมการใช้งานผ่าน PRITUNL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| ติดตั้ง SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB PANEL ${GRAY} ✖   ${NC}"
-	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
-		if [[ ! -e /etc/squid3/squid.conf ]]; then
+	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB PANEL ${GRAY} ✔   ${NC}"
 			echo -e "|${GRAY} 5${NC}| ติดตั้ง SQUID PROXY ${GREEN} ✔   ${NC}"
 		elif [[ -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| ถอนการติดตั้ง SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -108,7 +106,7 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| INSTALL OPENVPN PRITUNL CONTROL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| INSTALL SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| INSTALL WEB PANEL ${GRAY} ✖   ${NC}"
+	echo -e "|${GRAY} 4${NC}| INSTALL WEB PANEL ${GRAY} ✔   ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| INSTALL SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -899,8 +897,20 @@ fi
 	;;
 
 	4) # ==================================================================================================================
+if [[ -e /etc/openvpn/server.conf ]]; then
+	echo ""
+	echo "ไม่สามารถติดตั้ง Pritunl ได้"
+	echo "เนื่องจาก IP นี้ได้ติดตั้ง OpenVPN ที่ควบคุมการใช้งานผ่านเทอร์มินอลไปก่อนหน้านี้แล้ว"
+	echo ""
+	exit
+fi
 
-echo ""
+# Debian 8
+if [[ "$VERSION_ID" = 'VERSION_ID="8"' ]]; then
+	echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.6 main" > /etc/apt/sources.list.d/mongodb-org-3.6.list
+	echo "deb http://repo.pritunl.com/stable/apt jessie main" > /etc/apt/sources.list.d/pritunl.list
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 	read -p "DeathSide_Wab : " -e -i 2 ระบุ V. ที่ต้องการ
 	echo ""
 	echo -e " |${GRAY}1${NC}| DeathSide Wab V.1"
