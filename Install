@@ -601,7 +601,8 @@ fi
 	esac
 	clear
 	echo ""
-	echo "  ✬(￢＿￢メ).✬"
+	echo "  ✬DeathSide Projects VPN ✬"
+  echo ""
 	echo "  Script by 🇳ⓞⓞ🇲✬(￢＿￢メ).✬"
 	echo ""
 	echo ""
@@ -910,7 +911,9 @@ fi
 	echo ""
 	case $DeathSide_Wab in
 		1) 
-		DeathSide_Wab=wget https://raw.githubusercontent.com/sernoomze/Ocs-web/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
+		DeathSide_Wab=
+     echo ""
+     wget https://raw.githubusercontent.com/sernoomze/Ocs-web/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
 		;;
 		2) 
 		DeathSide_Wab=tcp
