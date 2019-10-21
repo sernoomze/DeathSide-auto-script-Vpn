@@ -902,23 +902,9 @@ fi
 	4) # ==================================================================================================================
         
 	echo ""
-        read -p "DeathSide_Wab : " -e -i 1 ระบุ V. ที่ต้องการ
-	echo ""
-	echo -e " |${GRAY}1${NC}| DeathSide Wab V.1"
-	echo -e " |${GRAY}2${NC}| DeathSide Wab V.2"
-	echo -e " |${GRAY}3${NC}| DeathSide Wab V.3"
-	echo ""
-	case $DeathSide_Wab in
-		1) 
-		DeathSide_Wab=
-echo ""
+        
 wget https://raw.githubusercontent.com/sernoomze/Ocs-web/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
-		;;
-		2) 
-		DeathSide_Wab=tcp
-		;;
-                 3) 
-		DeathSide_Wab=udp
+
  	;;
 
 	5) # ==================================================================================================================
