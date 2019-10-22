@@ -24,7 +24,10 @@ Exp.
 service webmin restart
 
 ให้เปิดบราวเซอเเล้วพิม http://ไอพีvpsของคุณ:10000
+
 1.ไปที่เมนู Others เเล้วเลือก Perl Modules
+
 2.เลือกช่อง install modules เเล้วเลือก install from cpan
 วาง - XML::Parser
+
 3.กด install
