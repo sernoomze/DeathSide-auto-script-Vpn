@@ -31,7 +31,8 @@ if [[ -e /etc/debian_version ]]; then
 
 	if [[ "$VERSION_ID" != 'VERSION_ID="7"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="8"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="9"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="14.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="16.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="17.04"' ]]; then
 		echo ""
-		echo "  ✬(￢＿￢メ).✬"
+		echo " ✬DeathSide VPN✬
+                echo ""
 		echo "  Script by 🇳ⓞⓞ🇲✬(￢＿￢メ).✬"
 		echo ""
 		echo "เวอร์ชั่น OS ของคุณเป็นเวอร์ชั่นที่ยังไม่รองรับ"
@@ -76,7 +77,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| ติดตั้ง OPENVPN ที่ควบคุมการใช้งานผ่าน PRITUNL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| ติดตั้ง SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB PANEL ${GRAY} ✖   ${NC}"
+	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB DEATHSIDE VPN ต้องลง OPENVPN ก่อน  ${RED} ✔   ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| ติดตั้ง SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -108,7 +109,7 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| INSTALL OPENVPN PRITUNL CONTROL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| INSTALL SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| INSTALL WEB PANEL ${GRAY} ✖   ${NC}"
+	echo -e "|${GRAY} 4${NC}| INSTALL WEB DEATHSIDE VPN Install OPENVPN menu 1 or 2  ${RED} ✔  ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| INSTALL SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -901,12 +902,9 @@ fi
 	4) # ==================================================================================================================
 
 cd ~/
-wget https://raw.githubusercontent.com/sernoomze/Ocs-web/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
-
-		;;
-    3) 
-		DeathSide_Wab=udp
- 	;;
+wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
+  
+;;
 
 	5) # ==================================================================================================================
 
