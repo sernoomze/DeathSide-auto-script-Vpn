@@ -222,7 +222,6 @@ echo "" | tee -a log-install.txt
 #echo "" | tee -a log-install.txt
 echo "โปรดรีบูต VPS ของคุณ!" | tee -a log-install.txt
 echo "=========================================================" | tee -a log-install.txt
-esac
 	echo ""
 	echo ""
 	echo "====================================================="
@@ -231,4 +230,5 @@ esac
   echo -e "ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง${RED} bash Install${NC} เพื่อติดตั้งอย่างอื่น"
 	echo "====================================================="
 	echo ""
+esac
 cd ~/
