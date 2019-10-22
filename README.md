@@ -7,3 +7,11 @@ OS UBUNTU 14-16-18
 wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/Install && chmod +x Install && bash Install
 
 ลงเสร็จพิมพ์ menu เพื่อใช้งาน
+
+
+##########################การตั้งค่า webmin############################
+ให้เปิดบราวเซอเเล้วพิม http://ไอพีvpsของคุณ:10000
+1.ไปที่เมนู Others เเล้วเลือก Perl Modules
+2.เลือกช่อง install modules เเล้วเลือก install from cpan
+วาง - XML::Parser
+3.กด install
