@@ -69,7 +69,10 @@ echo "  ✬DeathSide VPN✬"
 echo "  Script by 🇳ⓞⓞ🇲✬(￢＿￢メ).✬"
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
-	echo -e "ฟังก์ชั่นสคริปท์ ${GRAY} ✬(￢＿￢メ).✬${NC}"
+echo -e "อ่านก่อนติดตั้ง ${GREEN}By SerNooMzE${NC}"
+echo -e "ถ้าลง Openvpn ${GREEN}สามารถลง DeathSide Web ได้เลย${NC}"
+echo -e "ถ้าลง DeathSide Web อย่างเดียว ${GREEN} ต้องลง SQUID PROXY ด้วย${NC}"
+echo -e "ถ้าอ่านแล้ว ${GREEN}ติดตั้งได้เลย${NC}"
 	echo ""
 	if [[ -e /etc/openvpn/server.conf ]]; then
 		echo -e "|${GRAY} 1${NC}| ถอนการติดตั้ง OPENVPN ที่ควบคุมการใช้งานผ่านเทอร์มินอล ${GREEN} ✔   ${NC}"
@@ -78,7 +81,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| ติดตั้ง OPENVPN ที่ควบคุมการใช้งานผ่าน PRITUNL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| ติดตั้ง SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB DEATHSIDE VPN Debian 8 ${RED} ✔   ${NC}"
+	echo -e "|${GRAY} 4${NC}| ติดตั้ง WEB DEATHSIDE VPN Debian 8 ${GREEN} ✔   ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| ติดตั้ง SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -101,7 +104,9 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	read -p "เลือกหัวข้อฟังก์ชั่นที่ต้องการใช้งาน : " FUNCTIONSCRIPT
 
 elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
-	echo -e "FUNCTION SCRIPT ${GRAY} ✬(￢＿￢メ).✬${NC}"
+	echo -e "Read Frist ${GREEN}By SerNooMzE${NC}"
+echo -e "If install Openvpn ${GREEN}Can install DeathSide Web ${NC}"
+echo -e "If install DeathSide Web ${GREEN} Install SQUID PROXY too${NC}"
 	echo ""
 	if [[ -e /etc/openvpn/server.conf ]]; then
 		echo -e "|${GRAY} 1${NC}| REMOVE OPENVPN TERMINAL CONTROL ${GREEN} ✔   ${NC}"
@@ -110,7 +115,7 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	fi
 	echo -e "|${GRAY} 2${NC}| INSTALL OPENVPN PRITUNL CONTROL ${GREEN} ✔   ${NC}"
 	echo -e "|${GRAY} 3${NC}| INSTALL SSH DROPBEAR ${GREEN} ✔   ${NC}"
-	echo -e "|${GRAY} 4${NC}| INSTALL WEB DEATHSIDE VPN Debian 8 ${RED} ✔     ${NC}"
+	echo -e "|${GRAY} 4${NC}| INSTALL WEB DEATHSIDE VPN Debian 8 ${GREEN} ✔     ${NC}"
 	if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 		if [[ ! -e /etc/squid3/squid.conf ]]; then
 			echo -e "|${GRAY} 5${NC}| INSTALL SQUID PROXY ${GREEN} ✔   ${NC}"
@@ -132,15 +137,7 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	echo ""
 	read -p "Select a Function Script : " FUNCTIONSCRIPT
 fi
-echo ""
-echo "[][][]===========================================[][][]"
-echo "[][][]                       #######       อ่านก่อนสักนิิด       #######                     [][][]"
-echo "[][][]                                                                                                                                 [][][]"
-echo "[][][] 1. ถ้าลง Openvpn แล้วสามารถลง DeathSide Web ได้เลย          [][][]"
-echo "[][][]                                                                                                                                 [][][]"
-echo "[][][]  2. ถ้าลง DeathSide Web อย่างเดียวต้องลง  SQUID PROXY    [][][]"
-echo "[][][]===========================================[][][]"
-echo ""
+
 
 case $FUNCTIONSCRIPT in
 
@@ -644,16 +641,16 @@ fi
 		;;
 	esac
 	echo ""
-	esac
-	echo ""
 	echo ""
 	echo "====================================================="
 	echo -e "ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง${GRAY} menu ${NC} เพื่อไปยังขั้นตอนถัดไป"
-        echo "====================================================="
-        echo -e "ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง${RED} bash Install${NC} เพื่อติดตั้งอย่างอื่น"
+  echo "====================================================="
+  echo -e "ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง${RED} bash Install${NC} เพื่อติดตั้งอย่างอื่น"
 	echo "====================================================="
 	echo ""
 	exit
+
+	;;
 
 	2) # ==================================================================================================================
 
@@ -915,9 +912,9 @@ fi
 cd ~/
 clear
 echo ""
-echo "[][][]======================================[][][]"
-echo "[][][]                เลือกเวอร์ชั่น DeathSide Web ที่ต้องการ                 [][][]"
-echo "[][][]======================================[][][]"
+echo "======================================"
+echo " เลือกเวอร์ชั่น DeathSide Web ที่ต้องการ                 "
+echo "======================================"
 echo ""
 echo ""
 	echo -e " |${GRAY}1${NC}| DeathSide Web V.1"
@@ -932,7 +929,7 @@ wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/maste
 		;;
 		2) 
 		V=cd ~/
-wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE_v2.sh && chmod +x OcsSerNOoMzE_v2.sh && ./OcsSerNOoMzE_v2.sh
+wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
 ;;
 esac		
 ;;
