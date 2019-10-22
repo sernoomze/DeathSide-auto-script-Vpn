@@ -10,6 +10,18 @@ wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/maste
 
 
 ##########################การตั้งค่า webmin############################
+ตั้งค่า pass webmin
+
+/usr/share/webmin/changepass.pl /etc/webmin root (ใส่พาสที่ต้องการใช้)
+
+service webmin restart
+
+Exp.
+
+/usr/share/webmin/changepass.pl /etc/webmin root 123456
+
+service webmin restart
+
 ให้เปิดบราวเซอเเล้วพิม http://ไอพีvpsของคุณ:10000
 1.ไปที่เมนู Others เเล้วเลือก Perl Modules
 2.เลือกช่อง install modules เเล้วเลือก install from cpan
