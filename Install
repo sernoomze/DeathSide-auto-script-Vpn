@@ -903,8 +903,18 @@ fi
 	4) # ==================================================================================================================
 
 cd ~/
+echo ""
+	read -p "V : " -e -i 2 DrathSide Web V.?
+	case $V in
+		1) 
+		V=cd ~/
 wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
- ;;
+		;;
+		2) 
+		V=cd ~/
+wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
+		;;
+ 
 
 	5) # ==================================================================================================================
 
