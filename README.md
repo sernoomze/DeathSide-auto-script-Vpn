@@ -10,6 +10,7 @@ wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/maste
 
 
 ##########################การตั้งค่า webmin############################
+
 ตั้งค่า pass webmin
 
 /usr/share/webmin/changepass.pl /etc/webmin root (ใส่พาสที่ต้องการใช้)
