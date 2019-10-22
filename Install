@@ -132,6 +132,15 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	echo ""
 	read -p "Select a Function Script : " FUNCTIONSCRIPT
 fi
+echo ""
+echo "[][][]===========================================[][][]"
+echo "[][][]                       #######       อ่านก่อนสักนิิด       #######                     [][][]"
+echo "[][][]                                                                                                                                 [][][]"
+echo "[][][] 1. ถ้าลง Openvpn แล้วสามารถลง DeathSide Web ได้เลย          [][][]"
+echo "[][][]                                                                                                                                 [][][]"
+echo "[][][]  2. ถ้าลง DeathSide Web อย่างเดียวต้องลง  SQUID PROXY    [][][]"
+echo "[][][]===========================================[][][]"
+echo ""
 
 case $FUNCTIONSCRIPT in
 
@@ -902,9 +911,18 @@ fi
 
 	4) # ==================================================================================================================
 cd ~/
-
+clear
 echo ""
-	read -p "V : " -e -i 2 DrathSide Web V.?
+echo "[][][]======================================[][][]"
+echo "[][][]                เลือกเวอร์ชั่น DeathSide Web ที่ต้องการ                 [][][]"
+echo "[][][]======================================[][][]"
+echo ""
+echo ""
+	echo -e " |${GRAY}1${NC}| DeathSide Web V.1"
+	echo -e " |${GRAY}2${NC}| DeathSide Web V.2"
+	echo ""
+echo ""
+	read -p "DeathSide Web เวอร์ชั่นที่ต้องการลง  : " -e -i  1 V
 	case $V in
 		1) 
 		V=cd ~/
@@ -912,7 +930,7 @@ wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/maste
 		;;
 		2) 
 		V=cd ~/
-wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
+wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE_v2.sh && chmod +x OcsSerNOoMzE_v2.sh && ./OcsSerNOoMzE_v2.sh
 ;;
 esac		
 ;;
