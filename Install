@@ -929,7 +929,7 @@ wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/maste
 		;;
 		2) 
 		V=cd ~/
-wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.sh && chmod +x OcsSerNOoMzE.sh && ./OcsSerNOoMzE.sh
+wget https://raw.githubusercontent.com/sernoomze/DeathSide-auto-script-Vpn/master/OcsSerNOoMzE.V2.sh && chmod +x OcsSerNOoMzE.V2.sh && ./OcsSerNOoMzE.V2.sh
 ;;
 esac		
 ;;
