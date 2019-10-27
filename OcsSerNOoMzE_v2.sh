@@ -184,15 +184,14 @@ chown -R www-data:www-data /home/vps/public_html
 chmod -R g+rw /home/vps/public_html
 
 
-chmod 777 /home/vps/public_html/system/config
-chmod 777 /home/vps/public_html/system/config/database-app.php
-chmod 777 /home/vps/public_html/system/config/route.php
+chmod 755 /home/vps/public_html/application/config
+chmod 644 /home/vps/public_html/application/config/route.php
 
 clear
 echo ""
 echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
 echo ""
-echo "เปิดเบราว์เซอร์และเข้าถึงที่อยู่ http://$MYIP/ และกรอกข้อมูล 2 ด้านล่าง!"
+echo "เปิดเบราว์เซอร์และเข้าถึงที่อยู่ http://$MYIP/install และกรอกข้อมูล 2 ด้านล่าง!"
 echo "Database:"
 echo "- Database Host: localhost"
 echo "- Database Name: $DatabaseName"
