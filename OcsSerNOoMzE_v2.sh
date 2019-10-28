@@ -141,11 +141,9 @@ apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-run
 so2=$(expect -c "
 spawn mysql -u root -p; sleep 3
 expect \"\";  sleep 3; send \"$DatabasePass\r\"
-expect \"\";  sleep 3; send \"CREATE DATABASE IF NOT EXISTS $DatabaseName;EXIT;\r\"
 expect eof; ")
 echo "$so2"
-#pass
-#CREATE DATABASE IF NOT EXISTS OCS_PANEL;EXIT;
+CREATE DATABASE IF NOT EXISTS reseller;EXIT;
 
 cd 
 
