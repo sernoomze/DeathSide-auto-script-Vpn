@@ -186,7 +186,6 @@ chmod -R g+rw /home/vps/public_html
 
 chmod 755 /home/vps/public_html/application/config
 chmod 644 /home/vps/public_html/application/config/route.php
-chmod 644 /home/vps/public_html/application/config/database.php
 
 clear
 echo ""
