@@ -71,10 +71,6 @@ echo ""
 echo "1.ตั้งรหัสผ่านใหม่สำหรับ user root MySQL:"
 read -p "Password baru: " -e -i 123456789 DatabasePass
 echo ""
-echo "2.ตั้งค่าชื่อฐานข้อมูลสำหรับ OCS Panels"
-echo "โปรดใช้ตัวอัพษรปกติเท่านั้นห้ามมีอักขระพิเศษอื่นๆที่ไม่ใช่ขีดล่าง (_)"
-read -p "Nama Database: " -e -i OCS_PANEL DatabaseName
-echo ""
 echo "ระบบ Ocs Script ต้องการ เราพร้อมที่จะติดตั้ง OCS"
 read -n1 -r -p "กดปุ่ม Enter เพื่อดำเนินการต่อ ..."
 
