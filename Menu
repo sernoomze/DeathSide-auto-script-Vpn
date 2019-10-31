@@ -2005,10 +2005,10 @@ elif [[ ! -e /usr/local/bin/speedtest ]]; then
 	chmod +x /usr/local/bin/speedtest
 	clear
 	speedtest --share
-fi
+
 
 	;;
-	
+esac	
 
 	20) # ==================================================================================================================
 
@@ -3516,18 +3516,7 @@ wget -q -O menu "https://raw.githubusercontent.com/sernoomze/DeathSide-auto-scri
 chmod +x /usr/local/bin/menu
 menu
 
-	;;
+	  ;;
+
 
 esac 
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
